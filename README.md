@@ -8,8 +8,8 @@ designed to be part of a larger replica of the Display and Keyboard (DSKY) modul
 
 ![See through view](images/pcb.png)
 
-This keyboard is design to be capable of communicating to a controlling computer (a Raspberry Pi 3 or 4 in my case) via either
-a USB or I2C communications interface. The board is controlled by a ATSAMD21 processor. The key switches include
+This keyboard is capable of communicating to a controlling computer (a Raspberry Pi 3 or 4 in my case) via either
+a USB or I2C communications interface. The board is controlled by a ATSAMD21 processor. The LP11OA1TBSRG key switches include
 green backlighting LEDs, which are controlled by the ATSAMD processor.
 
 This project is composed of these component subfolders:
