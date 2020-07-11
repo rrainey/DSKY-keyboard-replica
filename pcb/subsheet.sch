@@ -1,0 +1,1639 @@
+EESchema Schematic File Version 4
+LIBS:DSKY_keyboard-cache
+LIBS:Trinket M0 rev D-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Trinket_M0_rev_D-eagle-import:FRAME_A_L #FRAME?
+U 2 1 CC96BE8F
+P 19200 16300
+F 0 "#FRAME?" H 19200 16300 50  0001 C CNN
+F 1 "FRAME_A_L" H 19200 16300 50  0001 C CNN
+F 2 "" H 19200 16300 50  0001 C CNN
+F 3 "" H 19200 16300 50  0001 C CNN
+	2    19200 16300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E3379E5
+P 11700 1750
+F 0 "R?" H 11700 1850 50  0000 C CNN
+F 1 "3.3K" H 11700 1750 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 11700 1750 50  0001 C CNN
+F 3 "" H 11700 1750 50  0001 C CNN
+	1    11700 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11900 1750 12000 1750
+$Comp
+L Device:Lamp LA?
+U 1 1 5E343B1A
+P 11800 1250
+F 0 "LA?" H 11928 1296 50  0000 L CNN
+F 1 "Lamp" H 11928 1205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 11800 1350 50  0001 C CNN
+F 3 "~" V 11800 1350 50  0001 C CNN
+	1    11800 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E344A30
+P 12300 1250
+F 0 "LA?" H 12428 1296 50  0000 L CNN
+F 1 "Lamp" H 12428 1205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12300 1350 50  0001 C CNN
+F 3 "~" V 12300 1350 50  0001 C CNN
+	1    12300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E34577E
+P 12800 1250
+F 0 "LA?" H 12928 1296 50  0000 L CNN
+F 1 "Lamp" H 12928 1205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12800 1350 50  0001 C CNN
+F 3 "~" V 12800 1350 50  0001 C CNN
+	1    12800 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 1050 12300 1050
+Connection ~ 12300 1050
+Wire Wire Line
+	12300 1050 12800 1050
+Wire Wire Line
+	11800 1450 12300 1450
+Connection ~ 12300 1450
+Wire Wire Line
+	12300 1450 12800 1450
+Wire Wire Line
+	12300 1450 12300 1550
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5E3515D4
+P 12300 2450
+F 0 "#GND?" H 12300 2450 50  0001 C CNN
+F 1 "GND" H 12300 2329 59  0000 C CNN
+F 2 "" H 12300 2450 50  0001 C CNN
+F 3 "" H 12300 2450 50  0001 C CNN
+	1    12300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E352776
+P 12300 1050
+F 0 "#PWR?" H 12300 900 50  0001 C CNN
+F 1 "+5V" H 12315 1223 50  0000 C CNN
+F 2 "" H 12300 1050 50  0001 C CNN
+F 3 "" H 12300 1050 50  0001 C CNN
+	1    12300 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 11300 1750 0    50   Input ~ 0
+LA1_PA02
+Wire Wire Line
+	11500 1750 11300 1750
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E367E9E
+P 14500 1750
+F 0 "R?" H 14500 1850 50  0000 C CNN
+F 1 "3.3K" H 14500 1750 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 14500 1750 50  0001 C CNN
+F 3 "" H 14500 1750 50  0001 C CNN
+	1    14500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E367EB1
+P 15000 1750
+F 0 "Q?" H 15188 1803 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 15188 1697 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 15200 1950 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15200 2050 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 15200 2150 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 15200 2250 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 15200 2350 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 15200 2450 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15200 2550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 15200 2650 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 15200 2750 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 15200 2850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15200 2950 60  0001 L CNN "Status"
+	1    15000 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14700 1750 14800 1750
+$Comp
+L Device:Lamp LA?
+U 1 1 5E367EBC
+P 14600 1250
+F 0 "LA?" H 14728 1296 50  0000 L CNN
+F 1 "Lamp" H 14728 1205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 14600 1350 50  0001 C CNN
+F 3 "~" V 14600 1350 50  0001 C CNN
+	1    14600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E367EC6
+P 15100 1250
+F 0 "LA?" H 15228 1296 50  0000 L CNN
+F 1 "Lamp" H 15228 1205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15100 1350 50  0001 C CNN
+F 3 "~" V 15100 1350 50  0001 C CNN
+	1    15100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E367ED0
+P 15600 1250
+F 0 "LA?" H 15728 1296 50  0000 L CNN
+F 1 "Lamp" H 15728 1205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15600 1350 50  0001 C CNN
+F 3 "~" V 15600 1350 50  0001 C CNN
+	1    15600 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 1050 15100 1050
+Connection ~ 15100 1050
+Wire Wire Line
+	15100 1050 15600 1050
+Wire Wire Line
+	14600 1450 15100 1450
+Connection ~ 15100 1450
+Wire Wire Line
+	15100 1450 15600 1450
+Wire Wire Line
+	15100 1450 15100 1550
+$Comp
+L power:+5V #PWR?
+U 1 1 5E367EEB
+P 15100 1050
+F 0 "#PWR?" H 15100 900 50  0001 C CNN
+F 1 "+5V" H 15115 1223 50  0000 C CNN
+F 2 "" H 15100 1050 50  0001 C CNN
+F 3 "" H 15100 1050 50  0001 C CNN
+	1    15100 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 14100 1750 0    50   Input ~ 0
+LA8_PA27
+Wire Wire Line
+	14300 1750 14100 1750
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E378837
+P 11650 4200
+F 0 "R?" H 11650 4300 50  0000 C CNN
+F 1 "3.3K" H 11650 4200 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 11650 4200 50  0001 C CNN
+F 3 "" H 11650 4200 50  0001 C CNN
+	1    11650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E37884A
+P 12150 4200
+F 0 "Q?" H 12338 4253 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 12338 4147 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 12350 4400 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12350 4500 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 12350 4600 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 12350 4700 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 12350 4800 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 12350 4900 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12350 5000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 12350 5100 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 12350 5200 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 12350 5300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12350 5400 60  0001 L CNN "Status"
+	1    12150 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 4200 11950 4200
+$Comp
+L Device:Lamp LA?
+U 1 1 5E378855
+P 11750 3700
+F 0 "LA?" H 11878 3746 50  0000 L CNN
+F 1 "Lamp" H 11878 3655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 11750 3800 50  0001 C CNN
+F 3 "~" V 11750 3800 50  0001 C CNN
+	1    11750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E37885F
+P 12250 3700
+F 0 "LA?" H 12378 3746 50  0000 L CNN
+F 1 "Lamp" H 12378 3655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12250 3800 50  0001 C CNN
+F 3 "~" V 12250 3800 50  0001 C CNN
+	1    12250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E378869
+P 12750 3700
+F 0 "LA?" H 12878 3746 50  0000 L CNN
+F 1 "Lamp" H 12878 3655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12750 3800 50  0001 C CNN
+F 3 "~" V 12750 3800 50  0001 C CNN
+	1    12750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 3500 12250 3500
+Connection ~ 12250 3500
+Wire Wire Line
+	12250 3500 12750 3500
+Wire Wire Line
+	11750 3900 12250 3900
+Connection ~ 12250 3900
+Wire Wire Line
+	12250 3900 12750 3900
+Wire Wire Line
+	12250 3900 12250 4000
+$Comp
+L power:+5V #PWR?
+U 1 1 5E378884
+P 12250 3500
+F 0 "#PWR?" H 12250 3350 50  0001 C CNN
+F 1 "+5V" H 12265 3673 50  0000 C CNN
+F 2 "" H 12250 3500 50  0001 C CNN
+F 3 "" H 12250 3500 50  0001 C CNN
+	1    12250 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 11250 4200 0    50   Input ~ 0
+LA2_PA03
+Wire Wire Line
+	11450 4200 11250 4200
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E378890
+P 14450 4200
+F 0 "R?" H 14450 4300 50  0000 C CNN
+F 1 "3.3K" H 14450 4200 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 14450 4200 50  0001 C CNN
+F 3 "" H 14450 4200 50  0001 C CNN
+	1    14450 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E3788A3
+P 14950 4200
+F 0 "Q?" H 15138 4253 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 15138 4147 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 15150 4400 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15150 4500 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 15150 4600 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 15150 4700 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 15150 4800 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 15150 4900 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15150 5000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 15150 5100 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 15150 5200 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 15150 5300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15150 5400 60  0001 L CNN "Status"
+	1    14950 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14650 4200 14750 4200
+$Comp
+L Device:Lamp LA?
+U 1 1 5E3788AE
+P 14550 3700
+F 0 "LA?" H 14678 3746 50  0000 L CNN
+F 1 "Lamp" H 14678 3655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 14550 3800 50  0001 C CNN
+F 3 "~" V 14550 3800 50  0001 C CNN
+	1    14550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E3788B8
+P 15050 3700
+F 0 "LA?" H 15178 3746 50  0000 L CNN
+F 1 "Lamp" H 15178 3655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15050 3800 50  0001 C CNN
+F 3 "~" V 15050 3800 50  0001 C CNN
+	1    15050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E3788C2
+P 15550 3700
+F 0 "LA?" H 15678 3746 50  0000 L CNN
+F 1 "Lamp" H 15678 3655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15550 3800 50  0001 C CNN
+F 3 "~" V 15550 3800 50  0001 C CNN
+	1    15550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14550 3500 15050 3500
+Connection ~ 15050 3500
+Wire Wire Line
+	15050 3500 15550 3500
+Wire Wire Line
+	14550 3900 15050 3900
+Connection ~ 15050 3900
+Wire Wire Line
+	15050 3900 15550 3900
+Wire Wire Line
+	15050 3900 15050 4000
+$Comp
+L power:+5V #PWR?
+U 1 1 5E3788DD
+P 15050 3500
+F 0 "#PWR?" H 15050 3350 50  0001 C CNN
+F 1 "+5V" H 15065 3673 50  0000 C CNN
+F 2 "" H 15050 3500 50  0001 C CNN
+F 3 "" H 15050 3500 50  0001 C CNN
+	1    15050 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 14050 4200 0    50   Input ~ 0
+LA9_PA11
+Wire Wire Line
+	14250 4200 14050 4200
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E388F71
+P 11650 6200
+F 0 "R?" H 11650 6300 50  0000 C CNN
+F 1 "3.3K" H 11650 6200 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 11650 6200 50  0001 C CNN
+F 3 "" H 11650 6200 50  0001 C CNN
+	1    11650 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E388F84
+P 12150 6200
+F 0 "Q?" H 12338 6253 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 12338 6147 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 12350 6400 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12350 6500 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 12350 6600 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 12350 6700 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 12350 6800 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 12350 6900 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12350 7000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 12350 7100 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 12350 7200 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 12350 7300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12350 7400 60  0001 L CNN "Status"
+	1    12150 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 6200 11950 6200
+$Comp
+L Device:Lamp LA?
+U 1 1 5E388F8F
+P 11750 5700
+F 0 "LA?" H 11878 5746 50  0000 L CNN
+F 1 "Lamp" H 11878 5655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 11750 5800 50  0001 C CNN
+F 3 "~" V 11750 5800 50  0001 C CNN
+	1    11750 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E388F99
+P 12250 5700
+F 0 "LA?" H 12378 5746 50  0000 L CNN
+F 1 "Lamp" H 12378 5655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12250 5800 50  0001 C CNN
+F 3 "~" V 12250 5800 50  0001 C CNN
+	1    12250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E388FA3
+P 12750 5700
+F 0 "LA?" H 12878 5746 50  0000 L CNN
+F 1 "Lamp" H 12878 5655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12750 5800 50  0001 C CNN
+F 3 "~" V 12750 5800 50  0001 C CNN
+	1    12750 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 5500 12250 5500
+Connection ~ 12250 5500
+Wire Wire Line
+	12250 5500 12750 5500
+Wire Wire Line
+	11750 5900 12250 5900
+Connection ~ 12250 5900
+Wire Wire Line
+	12250 5900 12750 5900
+Wire Wire Line
+	12250 5900 12250 6000
+$Comp
+L power:+5V #PWR?
+U 1 1 5E388FBE
+P 12250 5500
+F 0 "#PWR?" H 12250 5350 50  0001 C CNN
+F 1 "+5V" H 12265 5673 50  0000 C CNN
+F 2 "" H 12250 5500 50  0001 C CNN
+F 3 "" H 12250 5500 50  0001 C CNN
+	1    12250 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 11250 6200 0    50   Input ~ 0
+LA3_PA04
+Wire Wire Line
+	11450 6200 11250 6200
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E388FCA
+P 14450 6200
+F 0 "R?" H 14450 6300 50  0000 C CNN
+F 1 "3.3K" H 14450 6200 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 14450 6200 50  0001 C CNN
+F 3 "" H 14450 6200 50  0001 C CNN
+	1    14450 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E388FDD
+P 14950 6200
+F 0 "Q?" H 15138 6253 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 15138 6147 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 15150 6400 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15150 6500 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 15150 6600 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 15150 6700 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 15150 6800 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 15150 6900 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15150 7000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 15150 7100 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 15150 7200 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 15150 7300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15150 7400 60  0001 L CNN "Status"
+	1    14950 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14650 6200 14750 6200
+$Comp
+L Device:Lamp LAA?
+U 1 1 5E388FE8
+P 14550 5700
+F 0 "LAA?" H 14678 5746 50  0000 L CNN
+F 1 "Lamp" H 14678 5655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 14550 5800 50  0001 C CNN
+F 3 "~" V 14550 5800 50  0001 C CNN
+	1    14550 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LAA?
+U 1 1 5E388FF2
+P 15050 5700
+F 0 "LAA?" H 15178 5746 50  0000 L CNN
+F 1 "Lamp" H 15178 5655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15050 5800 50  0001 C CNN
+F 3 "~" V 15050 5800 50  0001 C CNN
+	1    15050 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LAA?
+U 1 1 5E388FFC
+P 15550 5700
+F 0 "LAA?" H 15678 5746 50  0000 L CNN
+F 1 "Lamp" H 15678 5655 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15550 5800 50  0001 C CNN
+F 3 "~" V 15550 5800 50  0001 C CNN
+	1    15550 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14550 5500 15050 5500
+Connection ~ 15050 5500
+Wire Wire Line
+	15050 5500 15550 5500
+Wire Wire Line
+	14550 5900 15050 5900
+Connection ~ 15050 5900
+Wire Wire Line
+	15050 5900 15550 5900
+Wire Wire Line
+	15050 5900 15050 6000
+$Comp
+L power:+5V #PWR?
+U 1 1 5E389017
+P 15050 5500
+F 0 "#PWR?" H 15050 5350 50  0001 C CNN
+F 1 "+5V" H 15065 5673 50  0000 C CNN
+F 2 "" H 15050 5500 50  0001 C CNN
+F 3 "" H 15050 5500 50  0001 C CNN
+	1    15050 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 14050 6200 0    50   Input ~ 0
+LA10_PA14
+Wire Wire Line
+	14250 6200 14050 6200
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E389023
+P 11600 8650
+F 0 "R?" H 11600 8750 50  0000 C CNN
+F 1 "3.3K" H 11600 8650 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 11600 8650 50  0001 C CNN
+F 3 "" H 11600 8650 50  0001 C CNN
+	1    11600 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E389036
+P 12100 8650
+F 0 "Q?" H 12288 8703 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 12288 8597 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 12300 8850 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12300 8950 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 12300 9050 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 12300 9150 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 12300 9250 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 12300 9350 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12300 9450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 12300 9550 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 12300 9650 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 12300 9750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12300 9850 60  0001 L CNN "Status"
+	1    12100 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 8650 11900 8650
+$Comp
+L Device:Lamp LA?
+U 1 1 5E389041
+P 11700 8150
+F 0 "LA?" H 11828 8196 50  0000 L CNN
+F 1 "Lamp" H 11828 8105 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 11700 8250 50  0001 C CNN
+F 3 "~" V 11700 8250 50  0001 C CNN
+	1    11700 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E38904B
+P 12200 8150
+F 0 "LA?" H 12328 8196 50  0000 L CNN
+F 1 "Lamp" H 12328 8105 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12200 8250 50  0001 C CNN
+F 3 "~" V 12200 8250 50  0001 C CNN
+	1    12200 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E389055
+P 12700 8150
+F 0 "LA?" H 12828 8196 50  0000 L CNN
+F 1 "Lamp" H 12828 8105 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12700 8250 50  0001 C CNN
+F 3 "~" V 12700 8250 50  0001 C CNN
+	1    12700 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 7950 12200 7950
+Connection ~ 12200 7950
+Wire Wire Line
+	12200 7950 12700 7950
+Wire Wire Line
+	11700 8350 12200 8350
+Connection ~ 12200 8350
+Wire Wire Line
+	12200 8350 12700 8350
+Wire Wire Line
+	12200 8350 12200 8450
+$Comp
+L power:+5V #PWR?
+U 1 1 5E389070
+P 12200 7950
+F 0 "#PWR?" H 12200 7800 50  0001 C CNN
+F 1 "+5V" H 12215 8123 50  0000 C CNN
+F 2 "" H 12200 7950 50  0001 C CNN
+F 3 "" H 12200 7950 50  0001 C CNN
+	1    12200 7950
+	1    0    0    -1  
+$EndComp
+Text GLabel 11200 8650 0    50   Input ~ 0
+LA4_P05
+Wire Wire Line
+	11400 8650 11200 8650
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E38907C
+P 14400 8650
+F 0 "R?" H 14400 8750 50  0000 C CNN
+F 1 "3.3K" H 14400 8650 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 14400 8650 50  0001 C CNN
+F 3 "" H 14400 8650 50  0001 C CNN
+	1    14400 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E38908F
+P 14900 8650
+F 0 "Q?" H 15088 8703 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 15088 8597 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 15100 8850 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15100 8950 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 15100 9050 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 15100 9150 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 15100 9250 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 15100 9350 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15100 9450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 15100 9550 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 15100 9650 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 15100 9750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15100 9850 60  0001 L CNN "Status"
+	1    14900 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 8650 14700 8650
+$Comp
+L Device:Lamp LAB?
+U 1 1 5E38909A
+P 14500 8150
+F 0 "LAB?" H 14628 8196 50  0000 L CNN
+F 1 "Lamp" H 14628 8105 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 14500 8250 50  0001 C CNN
+F 3 "~" V 14500 8250 50  0001 C CNN
+	1    14500 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LAB?
+U 1 1 5E3890A4
+P 15000 8150
+F 0 "LAB?" H 15128 8196 50  0000 L CNN
+F 1 "Lamp" H 15128 8105 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15000 8250 50  0001 C CNN
+F 3 "~" V 15000 8250 50  0001 C CNN
+	1    15000 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LAB?
+U 1 1 5E3890AE
+P 15500 8150
+F 0 "LAB?" H 15628 8196 50  0000 L CNN
+F 1 "Lamp" H 15628 8105 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15500 8250 50  0001 C CNN
+F 3 "~" V 15500 8250 50  0001 C CNN
+	1    15500 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14500 7950 15000 7950
+Connection ~ 15000 7950
+Wire Wire Line
+	15000 7950 15500 7950
+Wire Wire Line
+	14500 8350 15000 8350
+Connection ~ 15000 8350
+Wire Wire Line
+	15000 8350 15500 8350
+Wire Wire Line
+	15000 8350 15000 8450
+$Comp
+L power:+5V #PWR?
+U 1 1 5E3890C9
+P 15000 7950
+F 0 "#PWR?" H 15000 7800 50  0001 C CNN
+F 1 "+5V" H 15015 8123 50  0000 C CNN
+F 2 "" H 15000 7950 50  0001 C CNN
+F 3 "" H 15000 7950 50  0001 C CNN
+	1    15000 7950
+	1    0    0    -1  
+$EndComp
+Text GLabel 14000 8650 0    50   Input ~ 0
+LA11_PA15
+Wire Wire Line
+	14200 8650 14000 8650
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E3B281E
+P 11600 10750
+F 0 "R?" H 11600 10850 50  0000 C CNN
+F 1 "3.3K" H 11600 10750 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 11600 10750 50  0001 C CNN
+F 3 "" H 11600 10750 50  0001 C CNN
+	1    11600 10750
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E3B2831
+P 12100 10750
+F 0 "Q?" H 12288 10803 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 12288 10697 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 12300 10950 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12300 11050 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 12300 11150 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 12300 11250 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 12300 11350 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 12300 11450 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12300 11550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 12300 11650 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 12300 11750 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 12300 11850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12300 11950 60  0001 L CNN "Status"
+	1    12100 10750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 10750 11900 10750
+$Comp
+L Device:Lamp LA?
+U 1 1 5E3B283C
+P 11700 10250
+F 0 "LA?" H 11828 10296 50  0000 L CNN
+F 1 "Lamp" H 11828 10205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 11700 10350 50  0001 C CNN
+F 3 "~" V 11700 10350 50  0001 C CNN
+	1    11700 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E3B2846
+P 12200 10250
+F 0 "LA?" H 12328 10296 50  0000 L CNN
+F 1 "Lamp" H 12328 10205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12200 10350 50  0001 C CNN
+F 3 "~" V 12200 10350 50  0001 C CNN
+	1    12200 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E3B2850
+P 12700 10250
+F 0 "LA?" H 12828 10296 50  0000 L CNN
+F 1 "Lamp" H 12828 10205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12700 10350 50  0001 C CNN
+F 3 "~" V 12700 10350 50  0001 C CNN
+	1    12700 10250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 10050 12200 10050
+Connection ~ 12200 10050
+Wire Wire Line
+	12200 10050 12700 10050
+Wire Wire Line
+	11700 10450 12200 10450
+Connection ~ 12200 10450
+Wire Wire Line
+	12200 10450 12700 10450
+Wire Wire Line
+	12200 10450 12200 10550
+$Comp
+L power:+5V #PWR?
+U 1 1 5E3B286B
+P 12200 10050
+F 0 "#PWR?" H 12200 9900 50  0001 C CNN
+F 1 "+5V" H 12215 10223 50  0000 C CNN
+F 2 "" H 12200 10050 50  0001 C CNN
+F 3 "" H 12200 10050 50  0001 C CNN
+	1    12200 10050
+	1    0    0    -1  
+$EndComp
+Text GLabel 11200 10750 0    50   Input ~ 0
+LA5_PA19
+Wire Wire Line
+	11400 10750 11200 10750
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E3B2877
+P 14400 10750
+F 0 "R?" H 14400 10850 50  0000 C CNN
+F 1 "3.3K" H 14400 10750 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 14400 10750 50  0001 C CNN
+F 3 "" H 14400 10750 50  0001 C CNN
+	1    14400 10750
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E3B288A
+P 14900 10750
+F 0 "Q?" H 15088 10803 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 15088 10697 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 15100 10950 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15100 11050 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 15100 11150 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 15100 11250 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 15100 11350 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 15100 11450 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15100 11550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 15100 11650 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 15100 11750 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 15100 11850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15100 11950 60  0001 L CNN "Status"
+	1    14900 10750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14600 10750 14700 10750
+$Comp
+L Device:Lamp LAC?
+U 1 1 5E3B2895
+P 14500 10250
+F 0 "LAC?" H 14628 10296 50  0000 L CNN
+F 1 "Lamp" H 14628 10205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 14500 10350 50  0001 C CNN
+F 3 "~" V 14500 10350 50  0001 C CNN
+	1    14500 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LAC?
+U 1 1 5E3B289F
+P 15000 10250
+F 0 "LAC?" H 15128 10296 50  0000 L CNN
+F 1 "Lamp" H 15128 10205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15000 10350 50  0001 C CNN
+F 3 "~" V 15000 10350 50  0001 C CNN
+	1    15000 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LAC?
+U 1 1 5E3B28A9
+P 15500 10250
+F 0 "LAC?" H 15628 10296 50  0000 L CNN
+F 1 "Lamp" H 15628 10205 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15500 10350 50  0001 C CNN
+F 3 "~" V 15500 10350 50  0001 C CNN
+	1    15500 10250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14500 10050 15000 10050
+Connection ~ 15000 10050
+Wire Wire Line
+	15000 10050 15500 10050
+Wire Wire Line
+	14500 10450 15000 10450
+Connection ~ 15000 10450
+Wire Wire Line
+	15000 10450 15500 10450
+Wire Wire Line
+	15000 10450 15000 10550
+$Comp
+L power:+5V #PWR?
+U 1 1 5E3B28C4
+P 15000 10050
+F 0 "#PWR?" H 15000 9900 50  0001 C CNN
+F 1 "+5V" H 15015 10223 50  0000 C CNN
+F 2 "" H 15000 10050 50  0001 C CNN
+F 3 "" H 15000 10050 50  0001 C CNN
+	1    15000 10050
+	1    0    0    -1  
+$EndComp
+Text GLabel 14000 10750 0    50   Input ~ 0
+LA12_PA16
+Wire Wire Line
+	14200 10750 14000 10750
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E431297
+P 11550 13100
+F 0 "R?" H 11550 13200 50  0000 C CNN
+F 1 "3.3K" H 11550 13100 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 11550 13100 50  0001 C CNN
+F 3 "" H 11550 13100 50  0001 C CNN
+	1    11550 13100
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E4312AA
+P 12050 13100
+F 0 "Q?" H 12238 13153 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 12238 13047 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 12250 13300 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12250 13400 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 12250 13500 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 12250 13600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 12250 13700 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 12250 13800 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12250 13900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 12250 14000 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 12250 14100 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 12250 14200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12250 14300 60  0001 L CNN "Status"
+	1    12050 13100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 13100 11850 13100
+$Comp
+L Device:Lamp LA?
+U 1 1 5E4312B5
+P 11650 12600
+F 0 "LA?" H 11778 12646 50  0000 L CNN
+F 1 "Lamp" H 11778 12555 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 11650 12700 50  0001 C CNN
+F 3 "~" V 11650 12700 50  0001 C CNN
+	1    11650 12600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E4312BF
+P 12150 12600
+F 0 "LA?" H 12278 12646 50  0000 L CNN
+F 1 "Lamp" H 12278 12555 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12150 12700 50  0001 C CNN
+F 3 "~" V 12150 12700 50  0001 C CNN
+	1    12150 12600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E4312C9
+P 12650 12600
+F 0 "LA?" H 12778 12646 50  0000 L CNN
+F 1 "Lamp" H 12778 12555 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12650 12700 50  0001 C CNN
+F 3 "~" V 12650 12700 50  0001 C CNN
+	1    12650 12600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 12400 12150 12400
+Connection ~ 12150 12400
+Wire Wire Line
+	12150 12400 12650 12400
+Wire Wire Line
+	11650 12800 12150 12800
+Connection ~ 12150 12800
+Wire Wire Line
+	12150 12800 12650 12800
+Wire Wire Line
+	12150 12800 12150 12900
+$Comp
+L power:+5V #PWR?
+U 1 1 5E4312E4
+P 12150 12400
+F 0 "#PWR?" H 12150 12250 50  0001 C CNN
+F 1 "+5V" H 12165 12573 50  0000 C CNN
+F 2 "" H 12150 12400 50  0001 C CNN
+F 3 "" H 12150 12400 50  0001 C CNN
+	1    12150 12400
+	1    0    0    -1  
+$EndComp
+Text GLabel 11150 13100 0    50   Input ~ 0
+LA6_PA22
+Wire Wire Line
+	11350 13100 11150 13100
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E4312F0
+P 14350 13100
+F 0 "R?" H 14350 13200 50  0000 C CNN
+F 1 "3.3K" H 14350 13100 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 14350 13100 50  0001 C CNN
+F 3 "" H 14350 13100 50  0001 C CNN
+	1    14350 13100
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E431303
+P 14850 13100
+F 0 "Q?" H 15038 13153 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 15038 13047 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 15050 13300 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15050 13400 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 15050 13500 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 15050 13600 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 15050 13700 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 15050 13800 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15050 13900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 15050 14000 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 15050 14100 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 15050 14200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15050 14300 60  0001 L CNN "Status"
+	1    14850 13100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14550 13100 14650 13100
+$Comp
+L Device:Lamp LAD?
+U 1 1 5E43130E
+P 14450 12600
+F 0 "LAD?" H 14578 12646 50  0000 L CNN
+F 1 "Lamp" H 14578 12555 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 14450 12700 50  0001 C CNN
+F 3 "~" V 14450 12700 50  0001 C CNN
+	1    14450 12600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LAD?
+U 1 1 5E431318
+P 14950 12600
+F 0 "LAD?" H 15078 12646 50  0000 L CNN
+F 1 "Lamp" H 15078 12555 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 14950 12700 50  0001 C CNN
+F 3 "~" V 14950 12700 50  0001 C CNN
+	1    14950 12600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LAD?
+U 1 1 5E431322
+P 15450 12600
+F 0 "LAD?" H 15578 12646 50  0000 L CNN
+F 1 "Lamp" H 15578 12555 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15450 12700 50  0001 C CNN
+F 3 "~" V 15450 12700 50  0001 C CNN
+	1    15450 12600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 12400 14950 12400
+Connection ~ 14950 12400
+Wire Wire Line
+	14950 12400 15450 12400
+Wire Wire Line
+	14450 12800 14950 12800
+Connection ~ 14950 12800
+Wire Wire Line
+	14950 12800 15450 12800
+Wire Wire Line
+	14950 12800 14950 12900
+$Comp
+L power:+5V #PWR?
+U 1 1 5E43133D
+P 14950 12400
+F 0 "#PWR?" H 14950 12250 50  0001 C CNN
+F 1 "+5V" H 14965 12573 50  0000 C CNN
+F 2 "" H 14950 12400 50  0001 C CNN
+F 3 "" H 14950 12400 50  0001 C CNN
+	1    14950 12400
+	1    0    0    -1  
+$EndComp
+Text GLabel 13950 13100 0    50   Input ~ 0
+LA13_PA17
+Wire Wire Line
+	14150 13100 13950 13100
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E431349
+P 11550 15050
+F 0 "R?" H 11550 15150 50  0000 C CNN
+F 1 "3.3K" H 11550 15050 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 11550 15050 50  0001 C CNN
+F 3 "" H 11550 15050 50  0001 C CNN
+	1    11550 15050
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E43135C
+P 12050 15050
+F 0 "Q?" H 12238 15103 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 12238 14997 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 12250 15250 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12250 15350 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 12250 15450 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 12250 15550 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 12250 15650 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 12250 15750 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12250 15850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 12250 15950 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 12250 16050 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 12250 16150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12250 16250 60  0001 L CNN "Status"
+	1    12050 15050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 15050 11850 15050
+$Comp
+L Device:Lamp LA?
+U 1 1 5E431367
+P 11650 14550
+F 0 "LA?" H 11778 14596 50  0000 L CNN
+F 1 "Lamp" H 11778 14505 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 11650 14650 50  0001 C CNN
+F 3 "~" V 11650 14650 50  0001 C CNN
+	1    11650 14550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E431371
+P 12150 14550
+F 0 "LA?" H 12278 14596 50  0000 L CNN
+F 1 "Lamp" H 12278 14505 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12150 14650 50  0001 C CNN
+F 3 "~" V 12150 14650 50  0001 C CNN
+	1    12150 14550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA?
+U 1 1 5E43137B
+P 12650 14550
+F 0 "LA?" H 12778 14596 50  0000 L CNN
+F 1 "Lamp" H 12778 14505 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 12650 14650 50  0001 C CNN
+F 3 "~" V 12650 14650 50  0001 C CNN
+	1    12650 14550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 14350 12150 14350
+Connection ~ 12150 14350
+Wire Wire Line
+	12150 14350 12650 14350
+Wire Wire Line
+	11650 14750 12150 14750
+Connection ~ 12150 14750
+Wire Wire Line
+	12150 14750 12650 14750
+Wire Wire Line
+	12150 14750 12150 14850
+$Comp
+L power:+5V #PWR?
+U 1 1 5E431396
+P 12150 14350
+F 0 "#PWR?" H 12150 14200 50  0001 C CNN
+F 1 "+5V" H 12165 14523 50  0000 C CNN
+F 2 "" H 12150 14350 50  0001 C CNN
+F 3 "" H 12150 14350 50  0001 C CNN
+	1    12150 14350
+	1    0    0    -1  
+$EndComp
+Text GLabel 11150 15050 0    50   Input ~ 0
+LA7_PA23
+Wire Wire Line
+	11350 15050 11150 15050
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5E4313A2
+P 14350 15050
+F 0 "R?" H 14350 15150 50  0000 C CNN
+F 1 "3.3K" H 14350 15050 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 14350 15050 50  0001 C CNN
+F 3 "" H 14350 15050 50  0001 C CNN
+	1    14350 15050
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E4313B5
+P 14850 15050
+F 0 "Q?" H 15038 15103 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 15038 14997 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 15050 15250 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15050 15350 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 15050 15450 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 15050 15550 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 15050 15650 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 15050 15750 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 15050 15850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 15050 15950 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 15050 16050 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 15050 16150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 15050 16250 60  0001 L CNN "Status"
+	1    14850 15050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14550 15050 14650 15050
+$Comp
+L Device:Lamp LAE?
+U 1 1 5E4313C0
+P 14450 14550
+F 0 "LAE?" H 14578 14596 50  0000 L CNN
+F 1 "Lamp" H 14578 14505 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 14450 14650 50  0001 C CNN
+F 3 "~" V 14450 14650 50  0001 C CNN
+	1    14450 14550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LAE?
+U 1 1 5E4313CA
+P 14950 14550
+F 0 "LAE?" H 15078 14596 50  0000 L CNN
+F 1 "Lamp" H 15078 14505 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 14950 14650 50  0001 C CNN
+F 3 "~" V 14950 14650 50  0001 C CNN
+	1    14950 14550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LAE?
+U 1 1 5E4313D4
+P 15450 14550
+F 0 "LAE?" H 15578 14596 50  0000 L CNN
+F 1 "Lamp" H 15578 14505 50  0000 L CNN
+F 2 "Trinket M0 rev D:VCC7216-ND" V 15450 14650 50  0001 C CNN
+F 3 "~" V 15450 14650 50  0001 C CNN
+	1    15450 14550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 14350 14950 14350
+Connection ~ 14950 14350
+Wire Wire Line
+	14950 14350 15450 14350
+Wire Wire Line
+	14450 14750 14950 14750
+Connection ~ 14950 14750
+Wire Wire Line
+	14950 14750 15450 14750
+Wire Wire Line
+	14950 14750 14950 14850
+$Comp
+L power:+5V #PWR?
+U 1 1 5E4313EF
+P 14950 14350
+F 0 "#PWR?" H 14950 14200 50  0001 C CNN
+F 1 "+5V" H 14965 14523 50  0000 C CNN
+F 2 "" H 14950 14350 50  0001 C CNN
+F 3 "" H 14950 14350 50  0001 C CNN
+	1    14950 14350
+	1    0    0    -1  
+$EndComp
+Text GLabel 13950 15050 0    50   Input ~ 0
+LA14_PA18
+Wire Wire Line
+	14150 15050 13950 15050
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT3904-7-F Q?
+U 1 1 5E33EBC9
+P 12200 1750
+F 0 "Q?" H 12388 1803 60  0000 L CNN
+F 1 "MMBT3904-7-F" H 12388 1697 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 12400 1950 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12400 2050 60  0001 L CNN
+F 4 "MMBT3904-FDICT-ND" H 12400 2150 60  0001 L CNN "Digi-Key_PN"
+F 5 "MMBT3904-7-F" H 12400 2250 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 12400 2350 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 12400 2450 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds30036.pdf" H 12400 2550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/MMBT3904-7-F/MMBT3904-FDICT-ND/815727" H 12400 2650 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.2A SMD SOT23-3" H 12400 2750 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 12400 2850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 12400 2950 60  0001 L CNN "Status"
+	1    12200 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5EBB3239
+P 12300 2150
+F 0 "R?" H 12300 2250 50  0000 C CNN
+F 1 "100" H 12300 2150 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 12300 2150 50  0001 C CNN
+F 3 "" H 12300 2150 50  0001 C CNN
+	1    12300 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5EC23072
+P 15100 2450
+F 0 "#GND?" H 15100 2450 50  0001 C CNN
+F 1 "GND" H 15100 2329 59  0000 C CNN
+F 2 "" H 15100 2450 50  0001 C CNN
+F 3 "" H 15100 2450 50  0001 C CNN
+	1    15100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5EC2307C
+P 15100 2150
+F 0 "R?" H 15100 2250 50  0000 C CNN
+F 1 "100" H 15100 2150 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 15100 2150 50  0001 C CNN
+F 3 "" H 15100 2150 50  0001 C CNN
+	1    15100 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5EC5D31A
+P 12250 4900
+F 0 "#GND?" H 12250 4900 50  0001 C CNN
+F 1 "GND" H 12250 4779 59  0000 C CNN
+F 2 "" H 12250 4900 50  0001 C CNN
+F 3 "" H 12250 4900 50  0001 C CNN
+	1    12250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5EC5D324
+P 12250 4600
+F 0 "R?" H 12250 4700 50  0000 C CNN
+F 1 "100" H 12250 4600 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 12250 4600 50  0001 C CNN
+F 3 "" H 12250 4600 50  0001 C CNN
+	1    12250 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5EC5D32E
+P 15050 4900
+F 0 "#GND?" H 15050 4900 50  0001 C CNN
+F 1 "GND" H 15050 4779 59  0000 C CNN
+F 2 "" H 15050 4900 50  0001 C CNN
+F 3 "" H 15050 4900 50  0001 C CNN
+	1    15050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5EC5D338
+P 15050 4600
+F 0 "R?" H 15050 4700 50  0000 C CNN
+F 1 "100" H 15050 4600 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 15050 4600 50  0001 C CNN
+F 3 "" H 15050 4600 50  0001 C CNN
+	1    15050 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5ED64982
+P 12250 6900
+F 0 "#GND?" H 12250 6900 50  0001 C CNN
+F 1 "GND" H 12250 6779 59  0000 C CNN
+F 2 "" H 12250 6900 50  0001 C CNN
+F 3 "" H 12250 6900 50  0001 C CNN
+	1    12250 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5ED6498C
+P 12250 6600
+F 0 "R?" H 12250 6700 50  0000 C CNN
+F 1 "100" H 12250 6600 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 12250 6600 50  0001 C CNN
+F 3 "" H 12250 6600 50  0001 C CNN
+	1    12250 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5ED64996
+P 15050 6900
+F 0 "#GND?" H 15050 6900 50  0001 C CNN
+F 1 "GND" H 15050 6779 59  0000 C CNN
+F 2 "" H 15050 6900 50  0001 C CNN
+F 3 "" H 15050 6900 50  0001 C CNN
+	1    15050 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R3B?
+U 1 1 5ED649A0
+P 15050 6600
+F 0 "R3B?" H 15050 6700 50  0000 C CNN
+F 1 "100" H 15050 6600 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 15050 6600 50  0001 C CNN
+F 3 "" H 15050 6600 50  0001 C CNN
+	1    15050 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5ED8A32A
+P 12200 9350
+F 0 "#GND?" H 12200 9350 50  0001 C CNN
+F 1 "GND" H 12200 9229 59  0000 C CNN
+F 2 "" H 12200 9350 50  0001 C CNN
+F 3 "" H 12200 9350 50  0001 C CNN
+	1    12200 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5ED8A330
+P 12200 9050
+F 0 "R?" H 12200 9150 50  0000 C CNN
+F 1 "100" H 12200 9050 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 12200 9050 50  0001 C CNN
+F 3 "" H 12200 9050 50  0001 C CNN
+	1    12200 9050
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5ED8A336
+P 15000 9350
+F 0 "#GND?" H 15000 9350 50  0001 C CNN
+F 1 "GND" H 15000 9229 59  0000 C CNN
+F 2 "" H 15000 9350 50  0001 C CNN
+F 3 "" H 15000 9350 50  0001 C CNN
+	1    15000 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R3B?
+U 1 1 5ED8A33C
+P 15000 9050
+F 0 "R3B?" H 15000 9150 50  0000 C CNN
+F 1 "100" H 15000 9050 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 15000 9050 50  0001 C CNN
+F 3 "" H 15000 9050 50  0001 C CNN
+	1    15000 9050
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5EDAAC22
+P 12200 11450
+F 0 "#GND?" H 12200 11450 50  0001 C CNN
+F 1 "GND" H 12200 11329 59  0000 C CNN
+F 2 "" H 12200 11450 50  0001 C CNN
+F 3 "" H 12200 11450 50  0001 C CNN
+	1    12200 11450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5EDAAC28
+P 12200 11150
+F 0 "R?" H 12200 11250 50  0000 C CNN
+F 1 "100" H 12200 11150 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 12200 11150 50  0001 C CNN
+F 3 "" H 12200 11150 50  0001 C CNN
+	1    12200 11150
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5EDAAC2E
+P 15000 11450
+F 0 "#GND?" H 15000 11450 50  0001 C CNN
+F 1 "GND" H 15000 11329 59  0000 C CNN
+F 2 "" H 15000 11450 50  0001 C CNN
+F 3 "" H 15000 11450 50  0001 C CNN
+	1    15000 11450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R3C?
+U 1 1 5EDAAC34
+P 15000 11150
+F 0 "R3C?" H 15000 11250 50  0000 C CNN
+F 1 "100" H 15000 11150 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 15000 11150 50  0001 C CNN
+F 3 "" H 15000 11150 50  0001 C CNN
+	1    15000 11150
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5EDDE968
+P 12150 13800
+F 0 "#GND?" H 12150 13800 50  0001 C CNN
+F 1 "GND" H 12150 13679 59  0000 C CNN
+F 2 "" H 12150 13800 50  0001 C CNN
+F 3 "" H 12150 13800 50  0001 C CNN
+	1    12150 13800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5EDDE96E
+P 12150 13500
+F 0 "R?" H 12150 13600 50  0000 C CNN
+F 1 "100" H 12150 13500 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 12150 13500 50  0001 C CNN
+F 3 "" H 12150 13500 50  0001 C CNN
+	1    12150 13500
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5EDDE974
+P 14950 13800
+F 0 "#GND?" H 14950 13800 50  0001 C CNN
+F 1 "GND" H 14950 13679 59  0000 C CNN
+F 2 "" H 14950 13800 50  0001 C CNN
+F 3 "" H 14950 13800 50  0001 C CNN
+	1    14950 13800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R3D?
+U 1 1 5EDDE97A
+P 14950 13500
+F 0 "R3D?" H 14950 13600 50  0000 C CNN
+F 1 "100" H 14950 13500 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 14950 13500 50  0001 C CNN
+F 3 "" H 14950 13500 50  0001 C CNN
+	1    14950 13500
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5EDFED8C
+P 12150 15750
+F 0 "#GND?" H 12150 15750 50  0001 C CNN
+F 1 "GND" H 12150 15629 59  0000 C CNN
+F 2 "" H 12150 15750 50  0001 C CNN
+F 3 "" H 12150 15750 50  0001 C CNN
+	1    12150 15750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R?
+U 1 1 5EDFED92
+P 12150 15450
+F 0 "R?" H 12150 15550 50  0000 C CNN
+F 1 "100" H 12150 15450 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 12150 15450 50  0001 C CNN
+F 3 "" H 12150 15450 50  0001 C CNN
+	1    12150 15450
+	0    1    1    0   
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:GND #GND?
+U 1 1 5EDFED98
+P 14950 15750
+F 0 "#GND?" H 14950 15750 50  0001 C CNN
+F 1 "GND" H 14950 15629 59  0000 C CNN
+F 2 "" H 14950 15750 50  0001 C CNN
+F 3 "" H 14950 15750 50  0001 C CNN
+	1    14950 15750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Trinket_M0_rev_D-eagle-import:RESISTOR_0603_NOOUT R3E?
+U 1 1 5EDFED9E
+P 14950 15450
+F 0 "R3E?" H 14950 15550 50  0000 C CNN
+F 1 "100" H 14950 15450 40  0000 C CNB
+F 2 "Trinket M0 rev D:0603-NO" H 14950 15450 50  0001 C CNN
+F 3 "" H 14950 15450 50  0001 C CNN
+	1    14950 15450
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
