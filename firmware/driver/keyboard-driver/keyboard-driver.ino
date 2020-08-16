@@ -22,10 +22,17 @@ SOFTWARE.
 #include <Arduino.h>
 #include <Wire.h>
 
+#define DRIVER_VERSION 1
+
 /*
  * This is the driver for the DSKY-matic keyboard.  It provides software debouncing of the
  * keyboard and sends key press/release events via the I2C interface when polled from the
  * Raspberry Pi 3/4
+ * 
+ * This driver must be built using the "dskymatic_m0" board definition. See README.md for 
+ * Arduino IDE setup instructions.  The dskymatic_m0 definition is a superset of the Adafruit
+ * Trinket M0 definition so, if you simply want to see it build, you may select that board.  There will
+ * be gaps, however in its ability to fully drive the DSKY-matic keyboard PCB.
  */
 
 #define PIN_BACKLIGHT 7
@@ -144,7 +151,7 @@ KeyState stateCheck(int key)
   }
 
   /*
-   * g_bounce is basically a string of poll result history for a given key. 
+   * g_bounce is basically a string of boolean poll result history for a given key. 
    * This allows for a window of time for a key to settle into a new state.
    * Polling is currently performed on a 4ms interval and 13 bit history is maintained, so
    * the current configuration allows for a 4x13 = 52ms settle time.
@@ -172,14 +179,25 @@ KeyState stateCheck(int key)
 
 void requestEvent() {
   struct _key_event *p = popEvent();
+  unsigned char buffer[6];
+
   if (p == NULL) {
-    Wire.write("\[\]");
+    buffer[0] = 0xff;
+    buffer[1] = 0xff;
+    buffer[2] = 0xff;
+    buffer[3] = 0xff;
+    buffer[4] = 0;
+    buffer[5] = 0;
   }
   else {
-    char buffer[64];
-    sprintf(buffer, "\[%ul,%d,%d\]", p->time, p->key+1, p->new_state);
-    Wire.write(buffer);
+    buffer[0] = (p->time >> 24) & 0xff;
+    buffer[1] = (p->time >> 16) & 0xff;
+    buffer[2] = (p->time >> 8) & 0xff;
+    buffer[3] = p->time & 0xff;
+    buffer[4] = p->key+1;
+    buffer[5] = p->new_state;
   }
+  Wire.write(buffer, sizeof(buffer));
 }
 
 void setup() 
