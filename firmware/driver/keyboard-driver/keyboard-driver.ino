@@ -223,12 +223,12 @@ void setup()
   Wire.onRequest( requestEvent );
 }
 
-boolean first_time = false;
-unsigned int tlast = 0;
+boolean first_time = true;
+unsigned long tlast = 0;
 
 void loop() {
-  unsigned int delta_t;
-  unsigned int t;
+  unsigned long delta_t;
+  unsigned long t;
   
   if (first_time) {
     tlast = millis();
