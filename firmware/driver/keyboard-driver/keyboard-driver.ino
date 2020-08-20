@@ -23,11 +23,12 @@ SOFTWARE.
 #include <Wire.h>
 
 #define DRIVER_VERSION 1
+#define I2C_ADDRESS    0x10
 
 /*
  * This is the driver for the DSKY-matic keyboard.  It provides software debouncing of the
- * keyboard and sends key press/release events via the I2C interface when polled from the
- * Raspberry Pi 3/4
+ * keyboard pushbuttons and sends key press/release events via the I2C interface 
+ * when polled on the I2C interface
  * 
  * This driver must be built using the "dskymatic_m0" board definition. See README.md for 
  * Arduino IDE setup instructions.  The dskymatic_m0 definition is a superset of the Adafruit
@@ -36,13 +37,16 @@ SOFTWARE.
  */
 
 #define PIN_BACKLIGHT 7
-#define PIN_RED_LED 13
+#define PIN_RED_LED  13
 
 // consult variant.cpp for the dskymatic_m0 board definition
 // to see how digital pins were added
 
 #define PA_PIN(x) (23+(x))
 
+/*
+ * Valid for V2 Board
+ * /
 /*
 #define PIN_S1_STBY     PA_PIN(28)
 #define PIN_S2_KEY_REL  PA_PIN(27)
@@ -53,16 +57,16 @@ SOFTWARE.
 #define PIN_S7_MINUS    PA_PIN(3)
 #define PIN_S8_0        PA_PIN(4)
 #define PIN_S9_PLUS     PA_PIN(2)
-#define PIN_S10_1     PA_PIN(15)
-#define PIN_S11_2     PA_PIN(18)
-#define PIN_S12_4     PA_PIN(14)
-#define PIN_S13_3     PA_PIN(23)
-#define PIN_S14_5     PA_PIN(17)
-#define PIN_S15_8     PA_PIN(16)
-#define PIN_S16_6     PA_PIN(22)
-#define PIN_S17_7     PA_PIN(5)
-#define PIN_S18_9     PA_PIN(19)
-#define PIN_S19_RSET  PA_PIN(11)
+#define PIN_S10_1       PA_PIN(15)
+#define PIN_S11_2       PA_PIN(18)
+#define PIN_S12_4       PA_PIN(14)
+#define PIN_S13_3       PA_PIN(23)
+#define PIN_S14_5       PA_PIN(17)
+#define PIN_S15_8       PA_PIN(16)
+#define PIN_S16_6       PA_PIN(22)
+#define PIN_S17_7       PA_PIN(5)
+#define PIN_S18_9       PA_PIN(19)
+#define PIN_S19_RSET    PA_PIN(11)
 */
 
 #define SMAP_IGNORE 255
@@ -102,8 +106,8 @@ uint16_t g_bounce[SMAP_SIZE];
 
 struct _key_event {
   unsigned long time;
-  uint8_t key;
-  uint8_t  new_state;
+  uint8_t       key;
+  uint8_t       new_state;
 };
 
 /*
@@ -117,6 +121,7 @@ unsigned int qhead = 0;
 unsigned int qtail = 0;
 struct _key_event event_queue[QUEUE_MAX];
 
+#define CHECK_INTERVAL_MS    4
 #define DEBOUNCE_IGNORE_MASK 0xe000
 #define DEBOUNCE_TRIGGER     0xffff
 
@@ -182,12 +187,14 @@ void requestEvent() {
   unsigned char buffer[6];
 
   if (p == NULL) {
-    buffer[0] = 0xff;
-    buffer[1] = 0xff;
-    buffer[2] = 0xff;
-    buffer[3] = 0xff;
+    // buffer empty; return current millis() time
+    unsigned long i = millis();
+    buffer[0] = (i >> 24) & 0xff;
+    buffer[1] = (i >> 16) & 0xff;
+    buffer[2] = (i >> 8) & 0xff;
+    buffer[3] = i & 0xff;
     buffer[4] = 0;
-    buffer[5] = 0;
+    buffer[5] = 0xff;
   }
   else {
     buffer[0] = (p->time >> 24) & 0xff;
@@ -219,7 +226,7 @@ void setup()
   /* 
    *  Connect to I2C Bus on address 0x10
    */
-  Wire.begin( 0x10 );
+  Wire.begin( I2C_ADDRESS );
   Wire.onRequest( requestEvent );
 }
 
@@ -239,7 +246,7 @@ void loop() {
     delta_t = t - tlast;
 
     // poll key state every 4 milliseconds
-    if (delta_t >= 4) {
+    if (delta_t >= CHECK_INTERVAL_MS) {
       for(int i=0; i<SMAP_SIZE; ++i) {
         if (s_map[i] != SMAP_IGNORE) {
           stateCheck(i);
