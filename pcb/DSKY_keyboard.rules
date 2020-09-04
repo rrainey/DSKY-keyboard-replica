@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 4761)
+    (start_pass_no 5549)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -73,7 +73,7 @@
     "Net-(R4-Pad1)" "Net-(R5-Pad1)" "Net-(R6-Pad1)" "Net-(R7-Pad1)" "Net-(R8-Pad1)" "Net-(R9-Pad1)" "Net-(R11-Pad1)" "Net-(R12-Pad1)"
     "Net-(R13-Pad1)" "Net-(R14-Pad1)" "Net-(R15-Pad1)" "Net-(R16-Pad1)" "Net-(R17-Pad1)" "Net-(R18-Pad1)" "Net-(R19-Pad1)" "Net-(JP2-Pad6)"
     "Net-(JP2-Pad7)" "Net-(JP2-Pad8)" "Net-(JP2-Pad10)" PA07 "/D0_A4_PA08_SDA" "Net-(R21-Pad1)" "Net-(R22-Pad1)" "Net-(IC1-Pad13)"
-    "Net-(LED1-PadA)"
+    "Net-(LED1-PadA)" "Net-(R20-Pad1)" "Net-(S1-Pad3)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
